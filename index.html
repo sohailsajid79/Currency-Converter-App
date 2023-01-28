@@ -2,64 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Currency Converter App</title>
+    <title>Currency Converter</title>
     <meta
       name="Currency Converter App"
       content="This app allows the user to enter the amount and convert the currency to a different country's currency."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
       <header>Currency Converter</header>
       <form action="#">
         <div class="amount">
-          <input type="text" value="1" placeholder="Enter Amount" />
-          <div class="drop-list">
-            <div class="from">
-              <p>From</p>
-              <div class="select-box">
-                <img
-                  src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png"
-                  alt="flag"
-                />
-                <select>
-                  <option value="USD">USD</option>
-                  <option value="GBP">GBP</option>
-                  <option value="EUR">EUR</option>
-                  <option value="JPY">JPY</option>
-                  <option value="CAD">CAD</option>
-                  <option value="NZD">NZD</option>
-                  <option value="AUD">AUD</option>
-                </select>
-              </div>
+          <p>Enter Amount</p>
+          <input type="text" value="1" />
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/US/shiny/64.png" alt="flag" />
+              <select></select>
             </div>
-            <div class="icon">
-                <i class="fas fa-exchange-alt"><i>
-                </div>
-            <div class="to">
-              <p>To</p>
-              <div class="select-box">
-                <img
-                  src="https://cdn.countryflags.com/thumbs/europe/flag-400.png"
-                  alt="flag"
-                />
-                <select>
-                  <option value="USD">USD</option>
-                  <option value="GBP">GBP</option>
-                  <option value="EUR">EUR</option>
-                  <option value="JPY">JPY</option>
-                  <option value="CAD">CAD</option>
-                  <option value="NZD">NZD</option>
-                  <option value="AUD">AUD</option>
-                </select>
-              </div>
+          </div>
+          <div class="icon"><i class="fa-sharp fa-solid fa-rotate"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/GB/shiny/64.png" alt="flag" />
+              <select></select>
             </div>
           </div>
         </div>
         <div class="exchange-rate">1 USD = 0.94 EUR</div>
-        <button>Get Exchange Rate</button>
+        <button type="button">Exchange Rate</button>
       </form>
     </div>
   </body>
