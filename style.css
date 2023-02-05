@@ -12,7 +12,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: lightcoral;
+  padding: 0 10px;
+  background: #d36135;
+}
+
+::selection {
+  color: #fff;
+  background: #d36135;
 }
 
 .wrapper {
@@ -20,6 +26,7 @@ body {
   padding: 30px;
   border-radius: 7px;
   background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 
 .wrapper header {
@@ -53,7 +60,7 @@ form input {
 
 form input:focus {
   padding: 0 14px;
-  border: 2px solid #675aef;
+  border: 2px solid #a24936;
 }
 
 form .drop-list {
@@ -76,11 +83,26 @@ form .drop-list {
 .select-box select {
   width: auto;
   font-size: 16px;
+  background: none;
   margin: 0 -5px 0 5px;
 }
 
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+
 .select-box img {
-  max-width: 25px;
+  max-width: 21px;
 }
 
 .drop-list .icon {
@@ -97,5 +119,12 @@ form .exchange-rate {
 form button {
   height: 52px;
   color: #fff;
-  background: #675aef;
+  font-size: 17px;
+  cursor: pointer;
+  background: #282b28;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #3e5641;
 }

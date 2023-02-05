@@ -1,0 +1,23 @@
+{
+  "dependencies": {},
+  "name": "currency-converter-app",
+  "version": "1.0.0",
+  "main": "countryList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohailsajid79/Currency-Converter-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohailsajid79/Currency-Converter-App/issues"
+  },
+  "homepage": "https://github.com/sohailsajid79/Currency-Converter-App#readme",
+  "description": "",
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1"
+  }
+}
